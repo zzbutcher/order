@@ -39,6 +39,10 @@ mv order.war ROOT.war
 
 # 启动Tomcat
 cd $TOMCAT_APP_PATH/
+sh -x bin/shutdown.sh
+
+sleep 5
+
 sh -x bin/startup.sh
 
 
